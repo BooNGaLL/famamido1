@@ -1,0 +1,112 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  min-height: 600px;
+  max-height: 756px; 
+  display: flex;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+}
+
+
+.logo{
+  width: 228px;
+  height: 32px;
+}
+.logo_place_header{
+  position: absolute;
+  top:30px;
+  left: 64px;
+}
+.main_title{
+  height: 96px;
+  width: 730px;
+  font-size: 102px;
+  font-weight: 600;
+  margin: auto;
+  margin-left: 64px;
+}
+.header_p{
+  height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+}
+
+.header_img{
+  position: absolute;
+  width: 765px; 
+  height: 608px;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+.overlay{
+  background-color: #2f80ed;
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  top:44px;
+  right: 0;
+}
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+.description{
+  display: flex;
+}
+.two-columns{
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+}
+.first-column_description{
+  align-items: stretch;
+}
+.second-column_description{
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.brief{
+  margin: 0;
+  width: 175px;
+  height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.second-column_description_p{
+  height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
