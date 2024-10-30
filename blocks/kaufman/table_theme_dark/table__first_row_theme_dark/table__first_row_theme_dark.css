@@ -1,0 +1,6 @@
+.table__first_row_theme_dark{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
