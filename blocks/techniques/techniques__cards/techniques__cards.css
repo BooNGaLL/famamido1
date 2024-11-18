@@ -1,7 +1,0 @@
-.techniques__cards{
-    display: flex;
-    margin: 0 auto;
-    width: 920px;
-    flex-wrap: wrap;
-    gap:100px;
-  }
