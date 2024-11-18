@@ -1,0 +1,549 @@
+
+body{
+    background: #2A2C2F;
+    color:white;
+    width: 1280px;
+    font-family: "Inter";
+}
+.logo{
+    max-width: 176px;
+    height: 52px;
+}
+.lang_ru{
+    text-decoration: underline;
+    margin-right: 18px;
+}
+.lang{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 28px 48px 0 48px;
+}
+
+.intro{
+   padding:56px 148px 92px 148px;
+   margin:0;
+}
+
+.intro_h{
+    display: block;
+    max-width: 720px;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.intro_p{
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 640px;
+    text-align: center;
+    margin: 32px auto 64px auto;
+}
+.intro_img{
+    width: 984px;
+    height: 615px;
+}
+
+figure{
+    padding: 0;
+    margin: 0;  
+}
+.img_figcap{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+}
+.intro1{
+    padding-left: 148px;
+    padding-right: 148px;;
+}
+.intro1_h{
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 58px;
+    margin: 0;
+}
+.intro1_p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.08px;
+    max-width: 690px;
+    margin-top: 40px;
+    margin-bottom: 33px;
+}
+.intro1_ul{
+    padding: 0;
+    list-style-type:none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.intro1_ul span{
+    font-weight: normal;
+}
+.gallery{
+    padding: 92px 48px 0 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+}
+
+.gallery_img{
+    width: 284px;
+    height: 213px;
+}
+
+.info{
+    padding: 0 148px;
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+.card{
+    display: grid;
+    grid-template-columns: 460px 484px;
+    grid-template-rows: 76px 460px;
+    grid-template-areas: 
+    "title url"
+    "picture text";
+    column-gap:40px;
+    row-gap: 48px;
+    margin-bottom: 80px;
+}
+.card:nth-child(1){
+    grid-template-rows: 152px 460px;
+}
+.card:nth-child(4){
+    grid-template-rows: 152px 460px;
+}
+
+.card:nth-last-child(){
+    margin: 0;
+}
+
+.card_div_title{
+    grid-area: title;  
+    align-self: end; 
+}
+.card_div_title:nth-child(1){
+    align-self: center;
+}
+.card_div_title:nth-child(4){
+    align-self: center;
+}
+
+.card_title{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+}
+.card_div_picture{
+    grid-area: picture;
+}
+.card_picture{
+    width: 460px;
+    height: 460px;  
+}
+
+.card_url{
+    grid-area: url;
+    align-self:end;
+}
+.card_url_p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+}
+.card_url_a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: underline;
+    text-decoration-style:solid;
+}
+.card_url_a:hover{
+    cursor: pointer;
+}
+.card_description_p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29.34px;
+    max-width: 456px;
+    align-self:start;
+    margin-top: 0;
+}
+.card_description_p:nth-child(1){
+    margin-bottom: 26px;
+}
+.card_description{
+    grid-area: text;
+}
+.travel_to_baikal{
+    margin: 0 48px 92px 48px;
+    background-image: url('./img/__background.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1184px;
+    height: 740px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    list-style:none;
+    color:white;
+    position: relative;
+}
+.travel_to_baikal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.travel_to_baikal:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.travel_to_baikal_div{
+    position: absolute;
+    bottom: 245px;
+    right: 312px;
+}
+a{
+    text-decoration: none;
+    list-style:none;
+    color:white
+}
+.travel_to_baikal_h{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 560px;
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 900;
+    z-index: 2;
+    position: relative;
+}
+.travel_to_baikal_p{
+    text-align: center;
+    display: block;
+    max-width: 360px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 32px auto 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    margin:0 48px 24px 48px;
+}
+.footer_menu{
+    padding: 0;
+    list-style-type:none; 
+    display: flex;
+    text-align: end;
+    gap:18px;    
+}
+.footer_menu_a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+.footer_menu_a:hover{
+    cursor: pointer;
+}
+.copyright{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;   
+    align-items: end;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .intro{
+        padding:48px 48px 92px 48px; 
+     }
+    .intro1_p{
+        max-width: 720px; 
+        margin: 32px auto 56px auto;
+    }
+     .intro_img{
+        width: 928px; 
+        height: 580px;
+    }
+    .intro1{
+        padding-left: 48px;
+        padding-right: 48px;;
+    }
+    .gallery{
+        gap:14px;
+    }
+    .gallery_img{
+        width: 300px;
+        height: 225px;
+    }
+    .info{
+        padding: 0 48px; 
+    }
+    .card{
+        grid-template-columns: 440px 456px; 
+        grid-template-rows: 76px 440px;
+        column-gap:32px;
+    }
+    .card:nth-child(1){
+        grid-template-rows: 152px 440px; 
+    }
+    .card:nth-child(4){
+        grid-template-rows: 152px 440px;
+    }
+    .card_picture{
+        width: 440px;
+        height: 440px;
+    }
+    .travel_to_baikal{
+        margin: 0 0 92px 0;
+        width: 1024px;
+        height: 640px;
+    }
+    .travel_to_baikal_div{
+        bottom: 195px; 
+        right: 232px;
+    }
+} 
+
+
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        padding: 28px 24px 0 24px;   
+    }
+    .intro{
+        padding:48px 0 88px 0; 
+     }
+     .intro_img{
+        width: 768px; 
+        height: 480px;
+    }
+    .intro1{
+        padding-left: 24px; 
+        padding-right: 24px;;
+    }
+    .intro1_p{
+        max-width: 720px; 
+        margin: 32px auto 56px auto;
+    }
+    .gallery{
+        padding: 88px 24px 0 24px; 
+        gap:16px;
+    }
+    .gallery_img{
+        width: 352px; 
+        height: 264px;
+    }
+    .card{
+        grid-template-columns: 340px 352px; 
+        grid-template-rows: 46px auto;
+        column-gap:28px;
+        row-gap: 48px;
+        margin-bottom: 73px;
+    }
+    .info{
+        padding: 0 24px; 
+        margin-top: 88px;
+        margin-bottom: 90px;
+    }
+    .card:nth-child(1){
+        grid-template-rows: 92px auto; 
+    }
+    .card:nth-child(4){
+        grid-template-rows: 92px auto; 
+    }
+    .card_title{
+        font-weight: 900; 
+        font-size: 42px;
+        line-height: 46px;
+        max-width: 340px;
+    }
+    .card_picture{
+        width: 340px; 
+        height: 340px;  
+    }
+    .card_description_p{
+        font-size: 16px; 
+        line-height: 26.08px;
+        max-width: 352px;
+    }
+    .card_description_p:nth-child(1){
+        margin-bottom: 25px; 
+    }
+    .travel_to_baikal{
+        margin: 0 0 88px 0; 
+        width: 768px;
+        height: 480px;
+    }
+    .travel_to_baikal_div{
+        bottom: 115px; 
+        right: 104px;
+    }
+    .footer{
+        margin:0 24px 24px 24px; 
+    }
+} 
+
+
+@media screen and (max-width: 320px) {
+    .lang{
+        font-size: 18px; /*Изменение*/
+        line-height: 20px;
+    }
+    .header{
+        padding: 16px 16px 0 16px; /*Изменение*/
+    }
+    .intro{
+        padding:0 48px 0 64px; /*Изменение*/
+     }
+     .intro_h{
+        max-width: 288px; /*Изменение*/
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 44px;
+    }
+    .intro_p{
+        font-weight: 400; /*Изменение*/
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 288px;
+        margin: 16px auto 40px auto;
+    }
+    .intro_img{
+        width: 320px; /*Изменение*/
+        height: 200px;
+    }
+    .intro1{
+        padding-left: 16px; /*Изменение*/
+        padding-right: 16px;
+    }
+    .intro1_h{
+        font-size: 32px; /*Изменение*/
+        font-weight: 900;
+        line-height: 35px;
+    }
+    .gallery{
+        padding: 16px 64px 0 16px; /*Изменение*/
+        gap:12px;
+    }
+    .gallery_img{
+        width: 288px; /*Изменение*/
+        height: 216px;
+    }
+    .info{
+        padding: 0; /*Изменение*/
+        margin-top: 64px;
+        margin-bottom: 66px;
+    }
+    .card{
+        grid-template-columns: auto; /*Изменение*/
+        grid-template-rows: 35px 46px 320px 519px;
+        grid-template-areas: 
+        "title"
+        "url"
+        "picture"
+        "text";
+        row-gap: 32px;
+        margin-bottom: 50px;
+    }
+    .card:nth-child(1){
+        grid-template-rows: 35px 46px 320px 519px; /*Изменение*/
+    }
+    .card:nth-child(4){
+        grid-template-rows: 35px 46px 320px 519px; /*Изменение*/
+    }
+    .card_title{
+        font-weight: 900; /*Изменение*/
+        font-size: 32px;
+        line-height: 35px;
+        margin-left: 16px;
+    }
+    .card_picture{
+        width: 320px; /*Изменение*/
+        height: 320px;  
+    }
+    .card_url{
+        margin-left: 16px; /*Изменение*/
+    }
+    .card_description_p{
+        font-size: 16px;  /*Изменение*/
+        line-height: 26.08px;
+        max-width: 288px;
+        margin-left: 16px;
+    }
+    .card_description_p:nth-child(1){ 
+        margin-bottom: 25px; /*Изменение*/
+    }
+    .travel_to_baikal{
+        margin: 0 0 0 64px; /*Изменение*/
+        width: 320px;
+        height: 200px;
+    }
+    .travel_to_baikal_h{
+        max-width: 288px; /*Изменение*/
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .travel_to_baikal_div{
+        bottom: 33px; /*Изменение*/
+        right: 16px;
+    }
+    .travel_to_baikal_p{
+        max-width: 288px; /*Изменение*/
+        font-size: 14px;
+        line-height: 16px;
+        margin: 16px auto 0 auto;
+    }
+    .footer{
+        flex-direction: column;
+        margin:0 16px 24px 16px; /*Изменение*/
+    
+        gap:48px;
+    }
+    .footer_menu{
+        flex-direction: column;
+        text-align: start;
+        gap:32px; /*Изменение*/   
+    }
+    .footer_menu_a{
+        font-size: 24px; /*Изменение*/  
+        line-height: 24px;
+    }
+    .copyright{
+        font-size: 14px; /*Изменение*/ 
+        line-height: 14px;   
+    }
+} 
