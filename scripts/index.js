@@ -71,10 +71,8 @@ function handleCardFormSubmit(evt) {
 CardFormElement.addEventListener('submit', handleCardFormSubmit);
 
 
-const like = cardItem.querySelector('.card__like-button');
-like.addEventListener('click',function() {      
-    like.classList.toggle('card__like-button_is-active');
-});
+
+
 
 
 

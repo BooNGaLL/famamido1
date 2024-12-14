@@ -58,5 +58,3 @@ popupCloseImage.addEventListener('click', () => {
 });
   placeList.append(cardClone)
 })
-
-

@@ -15,7 +15,7 @@ function openPopup(popup) {
 popups.forEach(popup => {
   popup.addEventListener('click', (event) => {
     if (event.target === popup) {
-      closePopup(popup);
+      closePopup(popup);а
     }
   });
 });
