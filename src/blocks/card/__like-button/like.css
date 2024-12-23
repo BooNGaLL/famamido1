@@ -1,0 +1,10 @@
+.likes{
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.likes__counter{
+    margin: 0;
+}

@@ -1,11 +1,8 @@
-// Валидация формы №1
-//profileFormElement - document.querySelector('.popup__form')
-//nameInput - profileFormElement.querySelector('.popup__input_type_name')
-//jobInput - profileFormElement.querySelector('.popup__input_type_description')
-const formInput = profileFormElement.querySelector('.popup__input');
-const formError = profileFormElement.querySelector(`.${formInput.id}-error`);
 
-const showInputError = (formElement, inputElement, errorMessage) => {
+
+import {forminput} from "./index.js"
+import {formError} from "./index.js"
+ const showInputError = (formElement, inputElement, errorMessage) => {
   // Находим элемент ошибки внутри самой функции
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   // Остальной код такой же
@@ -14,7 +11,7 @@ const showInputError = (formElement, inputElement, errorMessage) => {
   errorElement.classList.add('form__input-error_active');
 };
 
-const hideInputError = (formElement, inputElement) => {
+ const hideInputError = (formElement, inputElement) => {
   // Находим элемент ошибки
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   // Остальной код такой же
@@ -26,26 +23,26 @@ const hideInputError = (formElement, inputElement) => {
 // Функция isValid теперь принимает formElement и inputElement,
 // а не берёт их из внешней области видимости
 
-const isValid = (formElement, inputElement) => {
+export const isValid = (formElement, inputElement) => {
   if (inputElement.validity.valueMissing) {
-    showInputError(formElement, inputElement, inputElement.validationMessage="Вы пропустили это поле.");
+    showInputError(formElement, inputElement, "Вы пропустили это поле.");
   } 
   else if(inputElement.validity.typeMismatch){
-    showInputError(formElement, inputElement, inputElement.validationMessage="Введите адрес сайта.");
+    showInputError(formElement, inputElement, "Введите адрес сайта.");
   }
   else if(inputElement.validity.tooShort){
-    showInputError(formElement, inputElement, inputElement.validationMessage="Минимальное количество символов: 2. Длина текста сейчас: 1 символ");
+    showInputError(formElement, inputElement, "Минимальное количество символов: 2. Длина текста сейчас: 1 символ");
   }
   else {
     hideInputError(formElement, inputElement);
   }
 }; 
-const hasInvalidInput = (inputList) => {
+export const hasInvalidInput = (inputList) => {
   return inputList.some((inputElement) => {
     return !inputElement.validity.valid;
   })
 }; 
-const toggleButtonState = (inputList, buttonElement) => {
+export const toggleButtonState = (inputList, buttonElement) => {
   // Если есть хотя бы один невалидный инпут
   if (hasInvalidInput(inputList)) {
     // сделай кнопку неактивной

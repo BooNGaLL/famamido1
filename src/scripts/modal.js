@@ -5,7 +5,7 @@ function closeByEsc(evt) {
         closePopup(openedPopup);      
     } 
 }
-function closePopup(popup) {
+export function closePopup(popup) {
   popup.classList.remove('popup_is-opened');
 }
 function openPopup(popup) {
@@ -15,7 +15,7 @@ function openPopup(popup) {
 popups.forEach(popup => {
   popup.addEventListener('click', (event) => {
     if (event.target === popup) {
-      closePopup(popup);а
+      closePopup(popup);
     }
   });
 });
